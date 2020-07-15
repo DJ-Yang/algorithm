@@ -1,7 +1,12 @@
 import math
 import sys
 
-max_int = 7500000
+num1 = int(input())
+num2 = int(input())
+
+z = num2 - num1 + 1
+
+max_int = num2 + 1
 sqrt_int = int(math.sqrt(max_int))
 prime_bool = [1] * (max_int)
 prime_list = []
@@ -24,14 +29,12 @@ def check_prime():
     a = a + 1
 check_prime()
 
-num = int(input(''))
+for i in range(num1, num1 + z):
+  if (prime_bool[i] == 1):
+    prime_list.append(i)
 
-start = 2
-while len(prime_list) <= num - 1:
-  if (prime_bool[start] == 1):
-    prime_list.append(start)
-  start = start + 1
-
-print(prime_list[num - 1]) 
-
-  
+if prime_list == []:
+  print(-1)
+else:
+  print(sum(prime_list))
+  print(min(prime_list))
