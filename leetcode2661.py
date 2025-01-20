@@ -57,7 +57,7 @@
 #                 return i
 
 
-# Second Solution
+# Second Solution (아직도 마지막에 row랑 column 위치 헷갈리긴한다..)
 class Solution: 
     def firstCompleteIndex(self, arr, mat) -> int:
         row_len = len(mat)
