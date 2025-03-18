@@ -1,3 +1,5 @@
+# xor을 사용하는 방법 정말 대단하다..
+
 class Solution:
     def longestNiceSubarray(self, nums: List[int]) -> int:
         length = len(nums)
